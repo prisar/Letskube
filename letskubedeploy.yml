@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: letskube
-        image: letskube:local
+        image: letskubeacrsiprsar.azurecr.io/letskube:v1
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
 
@@ -32,4 +32,4 @@ spec:
     app: letskube
   ports:
     - port: 80
-  type: NodePort
+  type: LoadBalancer
